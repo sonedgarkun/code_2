@@ -1,0 +1,40 @@
+/*Edgar Uriel Escalante Minero*/
+public class Aclaracion //introduciomos el nombre de la clase
+{
+    private int atributo1;
+    private int atributo2;
+    private String atributo3;
+    
+    public void setAtributo1(int attr1)
+    {
+        atributo1 = attr1;
+    }
+    public void setAtributo2(int attr2)
+    {
+        atributo2 = attr2;
+    }
+    public void setAtributo3(String attr3)
+    {
+        atributo3 = attr3;
+    }
+    //se crean constructores
+    public static void main(String[] args)
+    {
+        Aclaracion ac1 = new Aclaracion();//primer constructor vacio
+        Aclaracion ac2 = new Aclaracion();//segundo constructor vacio
+        
+        //se establecen los valore de la clase del primero en sets
+        ac1.setAtributo1(15);
+        ac1.setAtributo2(40);
+        ac1.setAtributo3("h");
+        
+        //se establecen los valores del segundo directamente
+        ac2.atributo1 = 20;
+        ac2.atributo2 = 50;
+        ac2.atributo3 = "h";
+        
+        System.out.println(ac1.atributo1 + ", " + ac1.atributo2 + ", " +ac1.atributo3);//se establecen en pantalla los valores ya dirigidos, es decir los sets
+        System.out.println(ac2.atributo1 + ", " + ac2.atributo2 + ", " +ac2.atributo3);// se establecen en pantalla los valores directamente
+        
+    }
+}
